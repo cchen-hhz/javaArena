@@ -111,7 +111,7 @@ public class Arena {
                 System.out.println("\n" + currentPlayer.getName() + "'s turn...");
                 
                 try {
-                    Thread.sleep(300); // Pause for player to see the state
+                    Thread.sleep(100); // Pause for player to see the state
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
@@ -120,7 +120,7 @@ public class Arena {
                 currentPlayer.earnEnergy(25);
                 this.effectContainer.applyAll(); // Process all generated effects
                 try {
-                    Thread.sleep(300); // Pause to see the result of the action
+                    Thread.sleep(100); // Pause to see the result of the action
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
